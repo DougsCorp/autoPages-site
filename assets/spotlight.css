@@ -1,0 +1,199 @@
+.glow-card {
+  --glow-hue: 25;
+  --glow-saturation: 100;
+  --glow-lightness: 50;
+  --glow-radius: 12;
+  --glow-border: 1.5;
+  --glow-size: 220;
+  --glow-outer: 0.55;
+  --glow-border-size: calc(var(--glow-border) * 1px);
+  --glow-spotlight-size: calc(var(--glow-size) * 1px);
+  --bg-spot-opacity: 0.14;
+  --border-spot-opacity: 1;
+  --border-light-opacity: 0.85;
+  position: relative;
+  isolation: isolate;
+  overflow: visible;
+  border-width: var(--glow-border-size);
+  border-color: hsl(var(--border));
+  background-image: radial-gradient(
+    var(--glow-spotlight-size) var(--glow-spotlight-size) at calc(var(--x, 0) * 1px)
+      calc(var(--y, 0) * 1px),
+    hsl(
+      var(--glow-hue) calc(var(--glow-saturation) * 1%) calc(70 * 1%) /
+        var(--bg-spot-opacity)
+    ),
+    transparent
+  );
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+.glow-card::before,
+.glow-card::after {
+  pointer-events: none;
+  content: "";
+  position: absolute;
+  inset: calc(var(--glow-border-size) * -1);
+  border: var(--glow-border-size) solid transparent;
+  border-radius: inherit;
+  background-attachment: fixed;
+  background-size: calc(100% + (2 * var(--glow-border-size)))
+    calc(100% + (2 * var(--glow-border-size)));
+  background-repeat: no-repeat;
+  background-position: 50% 50%;
+  -webkit-mask: linear-gradient(#0000, #0000), linear-gradient(#fff, #fff);
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-composite: destination-in;
+  mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
+  mask-clip: padding-box, border-box;
+  mask-composite: intersect;
+  z-index: 1;
+}
+
+.glow-card::before {
+  background-image: radial-gradient(
+    calc(var(--glow-spotlight-size) * 0.75) calc(var(--glow-spotlight-size) * 0.75) at
+      calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+    hsl(
+      var(--glow-hue) calc(var(--glow-saturation) * 1%) calc(var(--glow-lightness) * 1%) /
+        var(--border-spot-opacity)
+    ),
+    transparent 100%
+  );
+  filter: brightness(1.8);
+}
+
+.glow-card::after {
+  background-image: radial-gradient(
+    calc(var(--glow-spotlight-size) * 0.5) calc(var(--glow-spotlight-size) * 0.5) at
+      calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+    hsl(25 100% 85% / var(--border-light-opacity)),
+    transparent 100%
+  );
+}
+
+.glow-card-spot {
+  position: absolute;
+  inset: 0;
+  border-radius: inherit;
+  pointer-events: none;
+  z-index: 0;
+  opacity: var(--glow-outer);
+  filter: blur(12px);
+  background: none;
+}
+
+.glow-card-spot::before {
+  content: "";
+  position: absolute;
+  inset: -10px;
+  border: 10px solid transparent;
+  border-radius: inherit;
+  pointer-events: none;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-image: radial-gradient(
+    calc(var(--glow-spotlight-size) * 0.75) calc(var(--glow-spotlight-size) * 0.75) at
+      calc(var(--x, 0) * 1px) calc(var(--y, 0) * 1px),
+    hsl(var(--glow-hue) calc(var(--glow-saturation) * 1%) 50% / 0.45),
+    transparent 100%
+  );
+  -webkit-mask: linear-gradient(#0000, #0000), linear-gradient(#fff, #fff);
+  -webkit-mask-clip: padding-box, border-box;
+  -webkit-mask-composite: destination-in;
+  mask: linear-gradient(transparent, transparent), linear-gradient(white, white);
+  mask-clip: padding-box, border-box;
+  mask-composite: intersect;
+}
+
+.glow-card > *:not(.glow-card-spot) {
+  position: relative;
+  z-index: 2;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow-card {
+    background-image: none;
+  }
+
+  .glow-card::before,
+  .glow-card::after,
+  .glow-card-spot {
+    display: none;
+  }
+}
+
+.integrations-marquee {
+  overflow: hidden;
+  width: 100%;
+}
+
+.integrations-track {
+  display: flex;
+  width: max-content;
+  will-change: transform;
+  animation: integrations-scroll 40s linear infinite;
+}
+
+.integrations-group {
+  display: flex;
+  flex-shrink: 0;
+  flex-wrap: nowrap;
+  align-items: center;
+}
+
+.integrations-marquee:hover .integrations-track {
+  animation-play-state: paused;
+}
+
+@keyframes integrations-scroll {
+  from {
+    transform: translate3d(0, 0, 0);
+  }
+  to {
+    transform: translate3d(-50%, 0, 0);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .integrations-track {
+    animation: none;
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 1rem;
+  }
+
+  .integrations-group[aria-hidden="true"] {
+    display: none;
+  }
+}
+
+.hero-particles {
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  overflow: hidden;
+  pointer-events: none;
+}
+
+.hero-particles canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-particles {
+    background: radial-gradient(
+      ellipse 70% 60% at 50% 50%,
+      hsl(25 100% 50% / 0.1),
+      transparent 70%
+    );
+  }
+
+  .hero-particles canvas {
+    display: none;
+  }
+}

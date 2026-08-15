@@ -1,0 +1,1044 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutoPages - Gerenciador de Estruturas para DR Marketing</title>
+    <meta
+      name="description"
+      content="AutoPages - Gerenciador de estruturas para Direct Response Marketing. Dom&iacute;nios, p&aacute;ginas, trackers e campanhas centralizados em uma &uacute;nica plataforma."
+    />
+    <meta name="author" content="AutoPages" />
+    <meta property="og:title" content="AutoPages - Gerenciador de Estruturas para DR Marketing" />
+    <meta
+      property="og:description"
+      content="Centralize dom&iacute;nios, p&aacute;ginas, trackers e campanhas de Direct Response em uma plataforma feita para escalar opera&ccedil;&otilde;es."
+    />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" />
+    <link rel="stylesheet" href="assets/styles.css" />
+    <link rel="stylesheet" href="assets/spotlight.css" />
+  </head>
+  <body>
+    <div id="root">
+      <div role="region" aria-label="Notifications (F8)" tabindex="-1" style="pointer-events: none">
+        <ol
+          tabindex="-1"
+          class="fixed top-0 z-[100] flex max-h-screen w-full flex-col-reverse p-4 sm:bottom-0 sm:right-0 sm:top-auto sm:flex-col md:max-w-[420px]"
+        ></ol>
+      </div>
+      <section
+        aria-label="Notifications alt+T"
+        tabindex="-1"
+        aria-live="polite"
+        aria-relevant="additions text"
+        aria-atomic="false"
+      ></section>
+      <div class="min-h-screen bg-background">
+        <nav
+          class="fixed top-0 left-0 right-0 z-50 border-b border-border bg-background/80 backdrop-blur-md"
+        >
+          <div class="container mx-auto flex h-16 items-center justify-between px-4">
+            <a href="./" class="inline-flex items-center shrink-0" aria-label="AutoPages">
+              <img src="img/logo-dark.png" alt="AutoPages" class="h-8 w-auto" />
+            </a>
+            <div class="hidden md:flex items-center gap-8 text-sm text-muted-foreground">
+              <a href="#features" class="hover:text-foreground transition-colors">Funcionalidades</a
+              ><a href="#velocidade" class="hover:text-foreground transition-colors">Velocidade</a
+              ><a href="#depoimentos" class="hover:text-foreground transition-colors"
+                >Depoimentos</a
+              >
+            </div>
+            <a
+              href="https://panel.autopages.app/login"
+              class="inline-flex items-center justify-center gap-2 whitespace-nowrap text-sm font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 h-9 rounded-md px-4"
+            >
+              Login
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-log-in h-4 w-4"
+              >
+                <path d="m10 17 5-5-5-5"></path>
+                <path d="M15 12H3"></path>
+                <path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"></path>
+              </svg>
+            </a>
+          </div>
+        </nav>
+        <section
+          id="hero"
+          class="relative min-h-screen flex items-center justify-center overflow-hidden pt-16"
+        >
+          <div class="hero-particles" aria-hidden="true">
+            <canvas id="hero-particles"></canvas>
+          </div>
+          <div class="container mx-auto px-4 relative z-10">
+            <div class="max-w-4xl mx-auto text-center">
+
+              <h1 class="font-display text-5xl md:text-7xl font-bold leading-tight mb-6">
+                O sistema operacional das
+                <span class="text-gradient">operações de Direct Response</span>
+              </h1>
+              <p
+                class="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-4 leading-relaxed"
+              >
+                Centralize domínios, páginas, trackers e players em um só lugar. E crie estruturas para trafego direto em segundos. Autopages foi criado para operações de DR Marketing que necessitam
+                <span class="text-foreground font-medium">escalar com velocidade.</span>
+              </p>
+              <p class="text-sm md:text-base text-primary font-medium mb-10">
+                Ideal para produtores e afiliados de nutraceuticos e produtos digitais com alta demanda por páginas online.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <button
+                  data-scroll-to="contato"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-11 rounded-md text-base px-8 py-6"
+                >
+                  Solicitar Acesso
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right h-5 w-5"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg></button
+                ><button
+                  data-scroll-to="contato"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap font-medium ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 disabled:pointer-events-none disabled:opacity-50 [&amp;_svg]:pointer-events-none [&amp;_svg]:size-4 [&amp;_svg]:shrink-0 border-2 border-primary text-primary hover:bg-primary hover:text-primary-foreground transition-all duration-300 h-11 rounded-md text-base px-8 py-6"
+                >
+                  Agendar Demonstração
+                </button>
+              </div>
+              <div class="grid grid-cols-3 gap-8 mt-20 max-w-2xl mx-auto">
+                <div class="text-center">
+                  <div class="font-display text-3xl md:text-4xl font-bold text-primary">15s</div>
+                  <div class="text-xs md:text-sm text-muted-foreground mt-1">
+                    Para criar uma estrutura completa
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div class="font-display text-3xl md:text-4xl font-bold text-primary">90%</div>
+                  <div class="text-xs md:text-sm text-muted-foreground mt-1">
+                    Redução no tempo de configuração
+                  </div>
+                </div>
+                <div class="text-center">
+                  <div class="font-display text-3xl md:text-4xl font-bold text-primary">∞</div>
+                  <div class="text-xs md:text-sm text-muted-foreground mt-1">
+                    Domínios ilimitados por gestor
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="features" class="py-24 relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-background via-secondary/20 to-background"
+          ></div>
+          <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+              <h2 class="font-display text-3xl md:text-5xl font-bold mb-4">
+                Não é um builder.
+                <span class="text-gradient">É o gerenciador da sua operação de DR.</span>
+              </h2>
+              <p class="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Tudo o que uma operação de Direct Response Marketing precisa para escalar —
+                domínios, páginas, trackers e campanhas — em um só lugar.
+              </p>
+            </div>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-zap h-6 w-6 text-primary"
+                  >
+                    <path
+                      d="M4 14a1 1 0 0 1-.78-1.63l9.9-10.2a.5.5 0 0 1 .86.46l-1.92 6.02A1 1 0 0 0 13 10h7a1 1 0 0 1 .78 1.63l-9.9 10.2a.5.5 0 0 1-.86-.46l1.92-6.02A1 1 0 0 0 11 14z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Criação em Massa
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Crie dezenas de presells, VSLs e landing pages em segundos. Hospedagem automática
+                  com domínios configurados.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-link2 h-6 w-6 text-primary"
+                  >
+                    <path d="M9 17H7A5 5 0 0 1 7 7h2"></path>
+                    <path d="M15 7h2a5 5 0 1 1 0 10h-2"></path>
+                    <line x1="8" x2="16" y1="12" y2="12"></line>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Integração com Trackers
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Conexão nativa com RedTrack e outros trackers. Campanhas já saem configuradas e
+                  prontas para rodar.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-shield h-6 w-6 text-primary"
+                  >
+                    <path
+                      d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Proteção Multi-Gestor
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Separação total entre gestores. Cada um acessa apenas seus domínios, páginas e
+                  campanhas.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-users h-6 w-6 text-primary"
+                  >
+                    <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                    <circle cx="9" cy="7" r="4"></circle>
+                    <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                    <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Equipe de Devs Dedicada
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Time de desenvolvedores focado em manter sua operação sempre otimizada, com
+                  suporte técnico especializado.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-monitor-play h-6 w-6 text-primary"
+                  >
+                    <path
+                      d="M10 7.75a.75.75 0 0 1 1.142-.638l3.664 2.249a.75.75 0 0 1 0 1.278l-3.664 2.25a.75.75 0 0 1-1.142-.64z"
+                    ></path>
+                    <path d="M12 17v4"></path>
+                    <path d="M8 21h8"></path>
+                    <rect x="2" y="3" width="20" height="14" rx="2"></rect>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Multi-Plataforma
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Ideal para tráfego em YouTube, Facebook, TikTok e NativeAds. Estruturas otimizadas
+                  para cada plataforma.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-code-xml h-6 w-6 text-primary"
+                  >
+                    <path d="m18 16 4-4-4-4"></path>
+                    <path d="m6 8-4 4 4 4"></path>
+                    <path d="m14.5 4-5 16"></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Edição de Código no Painel
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Edite o código-fonte das páginas diretamente no painel. Agilidade total para
+                  ajustes, testes e personalizações avançadas.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-settings2 h-6 w-6 text-primary"
+                  >
+                    <path d="M20 7h-9"></path>
+                    <path d="M14 17H5"></path>
+                    <circle cx="17" cy="17" r="3"></circle>
+                    <circle cx="7" cy="7" r="3"></circle>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Configuração Rápida de Domínios
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Configure domínios de forma descomplicada em poucos cliques. Integração
+                  simplificada com registradores e DNS.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-infinity h-6 w-6 text-primary"
+                  >
+                    <path
+                      d="M12 12c-2-2.67-4-4-6-4a4 4 0 1 0 0 8c2 0 4-1.33 6-4Zm0 0c2 2.67 4 4 6 4a4 4 0 0 0 0-8c-2 0-4 1.33-6 4Z"
+                    ></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Domínios Ilimitados
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Adicione quantos domínios precisar sem limites. Escale sua operação de DR sem se
+                  preocupar com restrições de volume.
+                </p>
+              </div>
+              <div class="glass-card glow-card rounded-xl p-6 group">
+                <div class="glow-card-spot" aria-hidden="true"></div>
+                <div
+                  class="h-12 w-12 rounded-lg bg-primary/10 flex items-center justify-center mb-4 group-hover:bg-primary/20 transition-colors"
+                >
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-file-video h-6 w-6 text-primary"
+                  >
+                    <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+                    <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+                    <path d="m10 11 5 3-5 3v-6Z"></path>
+                  </svg>
+                </div>
+                <h3 class="font-display text-lg font-semibold mb-2 text-foreground">
+                  Páginas Com e Sem VSL
+                </h3>
+                <p class="text-muted-foreground text-sm leading-relaxed">
+                  Crie presells e páginas de vendas com ou sem VSL. Flexibilidade total para testar
+                  diferentes abordagens e formatos.
+                </p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="py-20 relative overflow-hidden">
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-background via-secondary/10 to-background"
+          ></div>
+          <div class="container mx-auto px-4 relative z-10 mb-12">
+            <div class="text-center">
+              <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+                Integração nativa com suas <span class="text-gradient">ferramentas favoritas</span>
+              </h2>
+              <p class="text-muted-foreground text-lg max-w-2xl mx-auto">
+                Conecte-se diretamente com as principais plataformas de domínios, hospedagem,
+                trackers e players de vídeo.
+              </p>
+            </div>
+          </div>
+          <div class="relative overflow-hidden integrations-marquee">
+            <div
+              class="absolute left-0 top-0 bottom-0 w-32 bg-gradient-to-r from-background to-transparent z-10 pointer-events-none"
+            ></div>
+            <div
+              class="absolute right-0 top-0 bottom-0 w-32 bg-gradient-to-l from-background to-transparent z-10 pointer-events-none"
+            ></div>
+            <div class="integrations-track">
+              <div class="integrations-group">
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/logo-godaddy.png"
+                      alt="GoDaddy"
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/logo-cloudflare.webp"
+                      alt="Cloudflare"
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/logo_redtrack.png"
+                      alt="RedTrack"
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/vturb-logo.png"
+                      alt="VTurb"
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/StrapCast-logo.webp"
+                      alt="StrapCast"
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+              </div>
+              <div class="integrations-group" aria-hidden="true">
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/logo-godaddy.png"
+                      alt=""
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/logo-cloudflare.webp"
+                      alt=""
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/logo_redtrack.png"
+                      alt=""
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/vturb-logo.png"
+                      alt=""
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+                <div class="flex-shrink-0 mx-4">
+                  <div
+                    class="glass-card rounded-xl px-10 py-6 flex items-center justify-center min-w-[180px] hover:border-primary/30 transition-colors group"
+                  >
+                    <img
+                      src="img/StrapCast-logo.webp"
+                      alt=""
+                      class="h-8 w-auto opacity-90 group-hover:opacity-100 transition-opacity"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="velocidade" class="py-24 relative overflow-hidden">
+          <div class="container mx-auto px-4 mb-20">
+            <div
+              class="relative rounded-2xl border border-primary/20 bg-primary/5 p-10 md:p-14 text-center overflow-hidden"
+            >
+              <div
+                class="absolute inset-0 bg-gradient-to-r from-primary/10 via-transparent to-primary/10"
+              ></div>
+              <p
+                class="relative z-10 font-display text-xl md:text-3xl font-bold leading-snug text-foreground max-w-4xl mx-auto"
+              >
+                Seus gestores de tráfego perdem tempo configurando páginas e trackers?
+                <span class="text-gradient">Isso acaba agora.</span>
+              </p>
+            </div>
+          </div>
+          <div
+            class="absolute top-1/2 left-0 w-[500px] h-[500px] rounded-full bg-primary/5 blur-[100px] -translate-y-1/2"
+          ></div>
+          <div class="container mx-auto px-4 relative z-10">
+            <div class="grid lg:grid-cols-2 gap-16 items-center">
+              <div>
+                <h2 class="font-display text-3xl md:text-5xl font-bold mb-6">
+                  Já imaginou tudo isso em <span class="text-gradient">15 segundos?</span>
+                </h2>
+                <p class="text-muted-foreground text-lg mb-8 leading-relaxed">
+                  Enquanto outros gestores gastam horas configurando domínios, páginas e trackers,
+                  sua operação já está rodando campanhas e gerando resultados.
+                </p>
+                <div class="space-y-4">
+                  <div class="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check h-5 w-5 text-primary flex-shrink-0"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span class="text-foreground">Campanha criada no tracker</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check h-5 w-5 text-primary flex-shrink-0"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span class="text-foreground"
+                      >3 variações de presell criadas e hospedadas</span
+                    >
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check h-5 w-5 text-primary flex-shrink-0"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span class="text-foreground">3 variações de VSL criadas e hospedadas</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check h-5 w-5 text-primary flex-shrink-0"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span class="text-foreground">Domínios exclusivos configurados</span>
+                  </div>
+                  <div class="flex items-center gap-3">
+                    <svg
+                      xmlns="http://www.w3.org/2000/svg"
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      stroke="currentColor"
+                      stroke-width="2"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                      class="lucide lucide-circle-check h-5 w-5 text-primary flex-shrink-0"
+                    >
+                      <circle cx="12" cy="12" r="10"></circle>
+                      <path d="m9 12 2 2 4-4"></path></svg
+                    ><span class="text-foreground">Tudo pronto para rodar</span>
+                  </div>
+                </div>
+              </div>
+              <div class="flex justify-center">
+                <div class="relative">
+                  <div
+                    class="w-64 h-64 rounded-full border-4 border-primary/20 flex items-center justify-center glow-border"
+                  >
+                    <div
+                      class="w-48 h-48 rounded-full border-2 border-primary/40 flex items-center justify-center"
+                    >
+                      <div class="text-center">
+                        <svg
+                          xmlns="http://www.w3.org/2000/svg"
+                          width="24"
+                          height="24"
+                          viewBox="0 0 24 24"
+                          fill="none"
+                          stroke="currentColor"
+                          stroke-width="2"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          class="lucide lucide-timer h-10 w-10 text-primary mx-auto mb-2 animate-pulse-glow"
+                        >
+                          <line x1="10" x2="14" y1="2" y2="2"></line>
+                          <line x1="12" x2="15" y1="14" y2="11"></line>
+                          <circle cx="12" cy="14" r="8"></circle>
+                        </svg>
+                        <div class="font-display text-5xl font-bold text-primary">15s</div>
+                        <div class="text-sm text-muted-foreground mt-1">Estrutura<br>completa</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div
+                    class="absolute -top-4 -right-4 w-20 h-20 rounded-full bg-primary/10 blur-xl animate-float"
+                  ></div>
+                  <div
+                    class="absolute -bottom-4 -left-4 w-16 h-16 rounded-full bg-primary/10 blur-xl animate-float"
+                    style="animation-delay: 3s"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="depoimentos" class="py-24 relative">
+          <div
+            class="absolute inset-0 bg-gradient-to-b from-background via-secondary/10 to-background"
+          ></div>
+          <div class="container mx-auto px-4 relative z-10">
+            <div class="text-center mb-16">
+              <h2 class="font-display text-3xl md:text-5xl font-bold mb-4">
+                Quem usa, <span class="text-gradient">não volta atrás</span>
+              </h2>
+              <p class="text-muted-foreground text-lg">
+                Players de grandes operações confiam no AutoPages
+              </p>
+            </div>
+            <div class="grid md:grid-cols-2 gap-6 max-w-4xl mx-auto">
+              <div class="glass-card rounded-xl p-6 relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-quote h-8 w-8 text-primary/20 mb-4"
+                >
+                  <path
+                    d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                  <path
+                    d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+                <p class="text-foreground leading-relaxed mb-6 text-sm">
+                  "Antes eu gastava horas configurando domínios, presells e páginas de VSL. Com o AutoPages,  em segundos tenho toda a estrutura no ar para quantas campanhas eu quiser. Mudou o jogo completamente."
+                </p>
+                <div>
+                  <div class="font-display font-semibold text-foreground">Rafael Mendes</div>
+                  <div class="text-xs text-muted-foreground">
+                    Gestor de Meta Ads | +R$2M/mês em ads
+                  </div>
+                </div>
+              </div>
+              <div class="glass-card rounded-xl p-6 relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-quote h-8 w-8 text-primary/20 mb-4"
+                >
+                  <path
+                    d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                  <path
+                    d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+                <p class="text-foreground leading-relaxed mb-6 text-sm">
+                  "A separação de domínios por gestor prá nos foi o ponto mais importante, antes precisavamos de um controle forte sobre isso mas com o AutoPages é tudo automatico e não nos preocupamos em repetir dominios dentro do Google por acidente, mesmo com 12 gestores na equipe."
+                </p>
+                <div>
+                  <div class="font-display font-semibold text-foreground">Juliana Carvalho</div>
+                  <div class="text-xs text-muted-foreground">
+                    
+                    CEO | Produtor com mais de 300 afiliados.
+                  </div>
+                </div>
+              </div>
+              <div class="glass-card rounded-xl p-6 relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-quote h-8 w-8 text-primary/20 mb-4"
+                >
+                  <path
+                    d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                  <path
+                    d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+                <p class="text-foreground leading-relaxed mb-6 text-sm">
+                  "A integração com o RedTrack é absurda. Eu crio a campanha no tracker e em
+                  segundos tenho tudo hospedado. Parece mágica. Só quem usa Redtrack sabe o tempo que da pra perder configurando novas estruturas."
+                </p>
+                <div>
+                  <div class="font-display font-semibold text-foreground">Marcos Teixeira</div>
+                  <div class="text-xs text-muted-foreground">
+                    Gestor de Google Ads | +de 10 Digitos gastos em tráfego
+                  </div>
+                </div>
+              </div>
+              <div class="glass-card rounded-xl p-6 relative">
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="24"
+                  height="24"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-width="2"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  class="lucide lucide-quote h-8 w-8 text-primary/20 mb-4"
+                >
+                  <path
+                    d="M16 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                  <path
+                    d="M5 3a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2 1 1 0 0 1 1 1v1a2 2 0 0 1-2 2 1 1 0 0 0-1 1v2a1 1 0 0 0 1 1 6 6 0 0 0 6-6V5a2 2 0 0 0-2-2z"
+                  ></path>
+                </svg>
+                <p class="text-foreground leading-relaxed mb-6 text-sm">
+                  "Gerencio vários gestores de tráfego. Sem o AutoPages seria impossível manter a
+                  operação organizada. Cada gestor tem seus domínios, templates e páginas."
+                </p>
+                <div>
+                  <div class="font-display font-semibold text-foreground">Camila Rocha</div>
+                  <div class="text-xs text-muted-foreground">
+                    Head de Operações
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="contato" class="py-24 relative">
+          <div class="absolute inset-0 bg-gradient-to-t from-primary/5 to-background"></div>
+          <div class="container mx-auto px-4 relative z-10">
+            <div
+              class="max-w-2xl mx-auto text-center glass-card rounded-2xl p-12 border-primary/20"
+            >
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="24"
+                height="24"
+                viewBox="0 0 24 24"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                class="lucide lucide-message-circle h-12 w-12 text-primary mx-auto mb-6"
+              >
+                <path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"></path>
+              </svg>
+              <h2 class="font-display text-3xl md:text-4xl font-bold mb-4">
+                Pronto para <span class="text-gradient">escalar sua operação?</span>
+              </h2>
+              <p class="text-foreground text-lg md:text-xl font-medium mb-4 leading-relaxed">
+                Se sua operação de DR perde tempo gerenciando domínios, páginas, trackers e
+                estruturas espalhadas, o AutoPages centraliza tudo para que você foque no que
+                realmente importa: <span class="text-gradient">fazer ROI.</span>
+              </p>
+              <p class="text-muted-foreground mb-8">
+                O AutoPages é exclusivo para operações sérias de Direct Response Marketing. Entre em
+                contato para saber como podemos acelerar seus resultados.
+              </p>
+              <div class="flex flex-col sm:flex-row gap-4 justify-center">
+                <a
+                  href="https://wa.me/5511912331756"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  class="inline-flex items-center justify-center gap-2 whitespace-nowrap ring-offset-background focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-ring focus-visible:ring-offset-2 bg-gradient-to-r from-primary to-primary-glow text-primary-foreground font-semibold shadow-lg hover:shadow-xl hover:scale-105 transition-all duration-300 h-11 rounded-md text-base px-8 py-6"
+                >
+                  WhatsApp
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="24"
+                    height="24"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    stroke-width="2"
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    class="lucide lucide-arrow-right h-5 w-5"
+                  >
+                    <path d="M5 12h14"></path>
+                    <path d="m12 5 7 7-7 7"></path>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <footer class="border-t border-border py-8">
+          <div
+            class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between gap-4"
+          >
+            <a href="./" class="inline-flex items-center shrink-0" aria-label="AutoPages">
+              <img src="img/logo-dark.png" alt="AutoPages" class="h-7 w-auto" />
+            </a>
+            <p class="text-xs text-muted-foreground">
+              © 2026 AutoPages. Todos os direitos reservados.
+            </p>
+          </div>
+        </footer>
+      </div>
+    </div>
+    <script>
+      (function () {
+        document.querySelectorAll('a[href^="#"]').forEach(function (a) {
+          a.addEventListener("click", function (e) {
+            var el = document.querySelector(a.getAttribute("href"));
+            if (el) {
+              e.preventDefault();
+              el.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+        document.querySelectorAll("[data-scroll-to]").forEach(function (b) {
+          b.addEventListener("click", function () {
+            var el = document.getElementById(b.getAttribute("data-scroll-to"));
+            if (el) el.scrollIntoView({ behavior: "smooth" });
+          });
+        });
+
+        var reduceMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+        if (!reduceMotion.matches) {
+          var root = document.documentElement;
+          document.addEventListener(
+            "pointermove",
+            function (e) {
+              root.style.setProperty("--x", e.clientX.toFixed(2));
+              root.style.setProperty("--y", e.clientY.toFixed(2));
+            },
+            { passive: true }
+          );
+        }
+
+        (function initIntegrationsMarquee() {
+          var marquee = document.querySelector(".integrations-marquee");
+          var track = marquee && marquee.querySelector(".integrations-track");
+          var source = track && track.querySelector(".integrations-group");
+          var clone = track && track.querySelector(".integrations-group[aria-hidden='true']");
+          if (!marquee || !track || !source || !clone || reduceMotion.matches) return;
+
+          var seed = source.innerHTML;
+          var ready = false;
+
+          function fill() {
+            var viewport = marquee.clientWidth;
+            if (!viewport) return;
+
+            var changed = false;
+            var guard = 0;
+            while (source.scrollWidth < viewport && guard < 12) {
+              source.insertAdjacentHTML("beforeend", seed);
+              guard++;
+              changed = true;
+            }
+
+            if (!changed && ready) return;
+
+            clone.innerHTML = source.innerHTML;
+            track.style.animationDuration = Math.max(source.scrollWidth / 70, 18) + "s";
+            ready = true;
+          }
+
+          fill();
+
+          source.querySelectorAll("img").forEach(function (img) {
+            if (img.complete) return;
+            img.addEventListener("load", fill, { once: true });
+            img.addEventListener("error", fill, { once: true });
+          });
+
+          if (window.ResizeObserver) {
+            var resizeTimer;
+            new ResizeObserver(function () {
+              clearTimeout(resizeTimer);
+              resizeTimer = setTimeout(fill, 120);
+            }).observe(marquee);
+          } else {
+            window.addEventListener("resize", fill);
+          }
+        })();
+      })();
+    </script>
+    <script src="assets/hero-particles.js"></script>
+  </body>
+</html>
